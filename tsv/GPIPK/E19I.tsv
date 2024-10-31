@@ -1,0 +1,8 @@
+!!SBtab	SBtabVersion='1.0' TableType='QuantityMatrix' TableName='E19I' 'TableTitle='' Document='MGLuRd'
+!Input_Time_S0	>S14
+5	100
+105	1000
+205	10000
+405	100000
+605	1000000
+805	5000000

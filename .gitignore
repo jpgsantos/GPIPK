@@ -1,0 +1,5 @@
+Matlab/Data/
+Matlab/Input_functions/
+Matlab/Results/
+Matlab/Settings/**
+!Matlab/Settings/Settings_thesis_GPIPK_lig.m

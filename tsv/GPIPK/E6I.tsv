@@ -1,0 +1,8 @@
+!!SBtab	SBtabVersion='1.0' TableType='QuantityMatrix' TableName='E6I' 'TableTitle='' Document='MGLuRd'
+!Input_Time_S0	>S23
+1	1
+101	10
+201	100
+301	1000
+401	10000
+501	50000

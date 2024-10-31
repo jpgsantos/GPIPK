@@ -1,0 +1,236 @@
+!!SBtab	Document='MGluR' TableName='Parameter' TableType='Quantity' TableTitle='MGLuR parameters'																									
+!ID	!Name	!Unit	!Value	!Median	!Max	!Min	!Std	!ProbDist	!Description	!Scale	!Location	!constrains	!Comment	!constrains_comment		!Value:linspace	!Min_linspace	!Max_linspace	!Value:log10	!LaTeX	LaTeX Construct	!ReferenceDOI				
+K1	kf_1	1/(nanomolarity*second)	1.0296						independent parameter	natural logarithm	Neuron	1	kf_1XGluXmGluR	1	1	2.8			0.44716							
+K2	kr_1	1/second	1.7047							natural logarithm	Neuron	2	kr_1XGlu_mGluR	2	2	5.5			0.74036							
+K3	kf_2	1/(nanomolarity*second)	1.0296							natural logarithm	Neuron	kf_1	kf_2XGluXmGluR_Gqbc	kf_1	1	2.8			0.44716							
+K4	kr_2	1/second	-2.9004							natural logarithm	Neuron	3	kr_2XGlu_mGluR_Gqbc	(kf5 * kr1 * kr6) / (kf6 * kr5)	2	0.055			-1.2596							
+K5	kf_3	1/(nanomolarity*second)	1.0296							natural logarithm	Neuron	kf_1	kf_3XGluXmGluR_Gqabc	kf_1	1	2.8			0.44716							
+K6	kr_3	1/second	-2.9004							natural logarithm	Neuron	kr_2	kr_3XGlu_mGluR_Gqabc	(kf7 * kr1 * kr8) / (kf8 * kr7)	2	0.055			-1.2596							
+K7	kf_4	1/(nanomolarity*second)	1.0296							natural logarithm	Neuron	kf_1	kf_4XGluXmGluR_Gqabc_PLC	kf_1	1	2.8			0.44716							
+K8	kr_4	1/second	-2.9004							natural logarithm	Neuron	kr_2	kr_4XGlu_mGluR_Gqabc_PLC	(kf13 * kf7 * kr1 * kr14 * kr8) / (kf14 * kf8 * kr13 * kr7)	2	0.055			-1.2596							
+K9	kf_5	1/(nanomolarity*second)	-8.2171							natural logarithm	Neuron	4	kf_5XmGluRXGqbc	3	3	0.00027			-3.5686							
+K10	kr_5	1/second	1.9169							natural logarithm	Neuron	kf_5*kr_6/kf_6*kr_1/kf1*kf2/kr2	kr_5XmGluR_Gqbc	4	4	6.8	6.8		0.83251							
+K11	kf_6	1/(nanomolarity*second)	-5.9145							natural logarithm	Neuron	5	kf_6XGlu_mGluRXGqbc	5	5	0.0027			-2.5686							
+K12	kr_6	1/second	-0.38566							natural logarithm	Neuron	6	kr_6XGlu_mGluR_Gqbc	6	6	0.68			-0.16749							
+K13	kf_7	1/(nanomolarity*second)	-8.2171							natural logarithm	Neuron	kf_5	kf_7XmGluRXGqabc	7	3	0.00027			-3.5686							
+K14	kr_7	1/second	1.9169							natural logarithm	Neuron	kf_5*kr_6/kf_6*kr_1/kf1*kf2/kr2	kr_7XmGluR_Gqabc	8	4	6.8			0.83251							
+K15	kf_8	1/(nanomolarity*second)	-5.9145							natural logarithm	Neuron	kf_6	kf_8XGlu_mGluRXGqabc	9	5	0.0027			-2.5686							
+K16	kr_8	1/second	-0.38566							natural logarithm	Neuron	kr_6	kr_8XGlu_mGluR_Gqabc	10	6	0.68			-0.16749							
+K17	kf_9	1/(nanomolarity*second)	2,7^-4							natural logarithm	Neuron	7	kf_9XmGluR_GqbcXGqaGDP	11	7	1	2.3077e-05		0							
+K18	kf_10	1/(nanomolarity*second)	0							natural logarithm	Neuron	8	kf_10XGlu_mGluR_GqbcXGqaGDP	12	8	1			0							
+K19	kf_11	1/second	-11.1075							natural logarithm	Neuron	9	kf_11XmGluR_Gqabc	13	9	1.5e-05			-4.8239							
+K20	kf_12	1/second	-0.43078							natural logarithm	Neuron	10	kf_12XGlu_mGluR_Gqabc	14	10	0.65			-0.18709							
+K21	kf_13	1/(nanomolarity*second)	0							natural logarithm	Neuron	11	kf_13XmGluR_GqabcXPLC	15	11	1			0							
+K22	kr_13	1/second	-0.34249							natural logarithm	Neuron	12	kr_13XmGluR_Gqabc_PLC	16	12	0.71			-0.14874							
+K23	kf_14	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_13	kf_14XGlu_mGluR_GqabcXPLC	17	13	1			0							
+K24	kr_14	1/second	-0.34249							natural logarithm	Neuron	kr_13	kr_14XGlu_mGluR_Gqabc_PLC	18	14	0.71			-0.14874							
+K25	kf_15	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_9	kf_15XmGluR_GqbcXGqaGDP_PLC	kf_9	7	1			0							
+K26	kf_16	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_10	kf_16XGlu_mGluR_GqbcXGqaGDP_PLC	kf_10	8	1			0							
+K27	kf_17	1/second	-11.1075							natural logarithm	Neuron	kf_11	kf_17XmGluR_Gqabc_PLC	kf_11	9	1.5e-05			-4.8239							
+K28	kf_18	1/second	-0.43078							natural logarithm	Neuron	kf_12	kf_18XGlu_mGluR_Gqabc_PLC	kf_12	10	0.65			-0.18709							
+K29	kf_19	1/(nanomolarity*second)	0							natural logarithm	Neuron	13	kf_19XDHPGXmGluR	19	15	1			0							
+K30	kr_19	1/second	0							natural logarithm	Neuron	14	kr_19XDHPG_mGluR	20	16	1			0							
+K31	kf_20	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_19	kf_20XDHPGXmGluR_Gqbc	kf_19	15	1			0							
+K32	kr_20	1/second	0							natural logarithm	Neuron	15	kr_20XDHPG_mGluR_Gqbc	(kf5 * kr19 * kr6) / (kf6 * kr5)	16	1			0							
+K33	kf_21	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_19	kf_21XDHPGXmGluR_Gqabc	kf_19	15	1			0							
+K34	kr_21	1/second	0							natural logarithm	Neuron	kr_20	kr_21XDHPG_mGluR_Gqabc	(kf7 * kr19 * kr8) / (kf8 * kr7)	16	1			0							
+K35	kf_22	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_19	kf_22XDHPGXmGluR_Gqabc_PLC	kf_19	15	1			0							
+K36	kr_22	1/second	0							natural logarithm	Neuron	kr_20	kr_22XDHPG_mGluR_Gqabc_PLC	(kf13 * kf7 * kr14 * kr19 * kr8) / (kf14 * kf8 * kr13 * kr7)	16	1			0							
+K37	kf_23	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_6	kf_23XDHPG_mGluRXGqbc	kf_6	5	1			0							
+K38	kr_23	1/second	0							natural logarithm	Neuron	kr_6	kr_23XDHPG_mGluR_Gqbc	kr_6	6	1			0							
+K39	kf_24	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_8	kf_24XDHPG_mGluRXGqabc	kf_8	5	1			0							
+K40	kr_24	1/second	0							natural logarithm	Neuron	kr_8	kr_24XDHPG_mGluR_Gqabc	kr_8	6	1			0							
+K41	kf_25	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_10	kf_25XDHPG_mGluR_GqbcXGqaGDP	kf_10	8	1			0							
+K42	kf_26	1/second	0							natural logarithm	Neuron	kf_12	kf_26XDHPG_mGluR_Gqabc	kf_12	10	1			0							
+K43	kf_27	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_14	kf_27XDHPG_mGluR_GqabcXPLC	kf_14	13	1			0							
+K44	kr_27	1/second	0							natural logarithm	Neuron	kr_14	kr_27XDHPG_mGluR_Gqabc_PLC	kr_14	14	1			0							
+K45	kf_28	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_16	kf_28XDHPG_mGluR_GqbcXGqaGDP_PLC	kf_10	8	1			0							
+K46	kf_29	1/second	0							natural logarithm	Neuron	kf_18	kf_29XDHPG_mGluR_Gqabc_PLC	kf_12	10	1			0							
+K47	kf_30	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_1	kf_30XAChXM1R		1	1			0							
+K48	kr_30	1/second	0							natural logarithm	Neuron	kr_1	kr_30XACh_M1R		2	1			0							
+K49	kf_31	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_2	kf_31XAChXM1R_Gqbc		1	1			0							
+K50	kr_31	1/second	0							natural logarithm	Neuron	kr_2	kr_31XACh_M1R_Gqbc		2	1			0							
+K51	kf_32	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_3	kf_32XAChXM1R_Gqabc		1	1			0							
+K52	kr_32	1/second	0							natural logarithm	Neuron	kr_3	kr_32XACh_M1R_Gqabc		2	1			0							
+K53	kf_33	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_4	kf_33XAChXM1R_Gqabc_PLC		1	1			0							
+K54	kr_33	1/second	0							natural logarithm	Neuron	kr_4	kr_33XACh_M1R_Gqabc_PLC		2	1			0							
+K55	kf_34	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_5	kf_34XM1RXGqbc		3	1			0							
+K56	kr_34	1/second	0							natural logarithm	Neuron	kr_5	kr_34XM1R_Gqbc		4	1			0							
+K57	kf_35	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_6	kf_35XACh_M1RXGqbc		5	1			0							
+K58	kr_35	1/second	0							natural logarithm	Neuron	kr_6	kr_35XACh_M1R_Gqbc		6	1			0							
+K59	kf_36	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_7	kf_36XM1RXGqabc		3	1			0							
+K60	kr_36	1/second	0							natural logarithm	Neuron	kr_7	kr_36XM1R_Gqabc		4	1			0							
+K61	kf_37	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_8	kf_37XACh_M1RXGqabc		5	1			0							
+K62	kr_37	1/second	0							natural logarithm	Neuron	kr_8	kr_37XACh_M1R_Gqabc		6	1			0							
+K63	kf_38	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_9	kf_38XM1R_GqbcXGqaGDP		7	1			0							
+K64	kf_39	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_10	kf_39XACh_M1R_GqbcXGqaGDP		8	1			0							
+K65	kf_40	1/second	0							natural logarithm	Neuron	kf_11	kf_40XM1R_Gqabc		9	1			0							
+K66	kf_41	1/second	0							natural logarithm	Neuron	kf_12	kf_41XACh_M1R_Gqabc		10	1			0							
+K67	kf_42	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_13	kf_42XM1R_GqabcXPLC		11	1			0							
+K68	kr_42	1/second	0							natural logarithm	Neuron	kr_13	kr_42XM1R_Gqabc_PLC		12	1			0							
+K69	kf_43	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_13	kf_43XACh_M1R_GqabcXPLC		13	1			0							
+K70	kr_43	1/second	0							natural logarithm	Neuron	kr_13	kr_43XACh_M1R_Gqabc_PLC		14	1			0							
+K71	kf_44	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_15	kf_44XM1R_GqbcXGqaGDP_PLC		7	1			0							
+K72	kf_45	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_16	kf_45XACh_M1R_GqbcXGqaGDP_PLC		8	1			0							
+K73	kf_46	1/second	0							natural logarithm	Neuron	kf_17	kf_46XM1R_Gqabc_PLC		9	1			0							
+K74	kf_47	1/second	0							natural logarithm	Neuron	kf_18	kf_47XACh_M1R_Gqabc_PLC		10	1			0							
+K75	kf_48	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_19	kf_48XOxoMXM1R		15	1			0							
+K76	kr_48	1/second	0							natural logarithm	Neuron	kr_19	kr_48XOxoM_M1R		16	1			0							
+K77	kf_49	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_20	kf_49XOxoMXM1R_Gqbc		15	1			0							
+K78	kr_49	1/second	0							natural logarithm	Neuron	kr_20	kr_49XOxoM_M1R_Gqbc		16	1			0							
+K79	kf_50	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_19	kf_50XOxoMXM1R_Gqabc		15	1			0							
+K80	kr_50	1/second	0							natural logarithm	Neuron	kr_20	kr_50XOxoM_M1R_Gqabc		16	1			0							
+K81	kf_51	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_19	kf_51XOxoMXM1R_Gqabc_PLC		15	1			0							
+K82	kr_51	1/second	0							natural logarithm	Neuron	kr_20	kr_51XOxoM_M1R_Gqabc_PLC		16	1			0							
+K83	kf_52	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_6	kf_52XOxoM_M1RXGqbc		5	1			0							
+K84	kr_52	1/second	0							natural logarithm	Neuron	kr_6	kr_52XOxoM_M1R_Gqbc		6	1			0							
+K85	kf_53	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_8	kf_53XOxoM_M1RXGqabc		5	1			0							
+K86	kr_53	1/second	0							natural logarithm	Neuron	kr_8	kr_53XOxoM_M1R_Gqabc		6	1			0							
+K87	kf_54	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_10	kf_54XOxoM_M1R_GqbcXGqaGDP		8	1			0							
+K88	kf_55	1/second	0							natural logarithm	Neuron	kf_12	kf_55XOxoM_M1R_Gqabc		10	1			0							
+K89	kf_56	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_14	kf_56XOxoM_M1R_GqabcXPLC		13	1			0							
+K90	kr_56	1/second	0							natural logarithm	Neuron	kr_14	kr_56XOxoM_M1R_Gqabc_PLC		14	1			0							
+K91	kf_57	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_16	kf_57XOxoM_M1R_GqbcXGqaGDP_PLC		8	1			0							
+K92	kf_58	1/second	0							natural logarithm	Neuron	kf_18	kf_58XOxoM_M1R_Gqabc_PLC		10	1			0							
+K93	kf_59	1/(nanomolarity*second)	0							natural logarithm	Neuron	kf_9	kf_59XGqbcXGqaGDP	kf_9	7	1			0							
+K94	kf_60	1/second	-11.1075							natural logarithm	Neuron	kf_11	kf_60XGqabc	kf_11	9	1.5e-05			-4.8239							
+K95	kf_61	1/second	-3.6497							natural logarithm	Neuron	13	kf_61XGqaGTP	21	17	0.026			-1.585							
+K96	kf_62	1/second	2.7081							natural logarithm	Neuron	14	kf_62XGqaGTP_PLC	22	18	15			1.1761							
+K97	kr_62	1/(nanomolarity*second)	1.5476							natural logarithm	Neuron	15	kr_62XGqaGTPXPLC	23	19	4.7			0.6721							
+K98	kf_63	1/(nanomolarity*second)	-0.34249							natural logarithm	Neuron	kf_13	kf_63XGqaGDPXPLC	kf_13	11	1			0							
+K99	kr_63	1/second	0							natural logarithm	Neuron	kr_13	kr_63XGqaGDP_PLC	kr_13	12	0.71			-0.14874							
+K100	kf_64	1/(nanomolarity*second)	-0.34249							natural logarithm	Neuron	16	kf_64XGqaGTPXPLC	kf_13	11	1			0							
+K101	kr_64	1/second	0							natural logarithm	Neuron	17	kr_64XGqaGTP_PLC	kr_13	12	0.71			-0.14874							
+K102	kf_65	1/second	0							natural logarithm	Neuron	18	kf_65XPI	24	20	1			0							
+K103	kr_65	1/second	0							natural logarithm	Neuron	19	kr_65XPIP	25	21	1			0							
+K104	kf_66	1/second	0							natural logarithm	Neuron	20	kf_66XPIP	26	22	1			0							
+K105	kr_66	1/second	0							natural logarithm	Neuron	21	kr_66XPIP2	27	23	1			0							
+K106	kf_67	1/second	0							natural logarithm	Neuron	22	kf_67XPIP2	28	24	1			0							
+K107	kf_68	1/(nanomolarity*second)	0							natural logarithm	Neuron	24	kf_68XPIP2XGqaGTP_PLC	29	25	1			0							
+K108	kf_69	1/(nanomolarity*second)	0							natural logarithm	Neuron	25	kf_69XPIP2XKCNQ	30	26	1			0							
+K109	kr_69	1/second	0							natural logarithm	Neuron	26	kr_69XPIP2_KCNQ	31	27	1			0							
+K110	kf_70	1/(nanomolarity*second)	0							natural logarithm	Neuron	27	kf_70XPIP2XPH	32	28	1			0							
+K111	kr_70	1/second	0							natural logarithm	Neuron	28	kr_70XPIP2_PH	33	29	1			0							
+K112	kf_71	1/(nanomolarity*second)	0							natural logarithm	Neuron	29	kf_71XIP3XPH	34	30	1			0							
+K113	kr_71	1/second	0							natural logarithm	Neuron	30	kr_71XIP3_PH	35	31	1			0							
+K114	kf_72	1/second	0							natural logarithm	Neuron	31	kf_72XIP3	36	32	1			0							
+K115	kf_73	1/second	0							natural logarithm	Neuron	32	kf_73XDAG	37	33	1										
+K116	kf_74	1/second	0							natural logarithm	Neuron	33	kf_74XPA	38	34	1										
+K117	kf_75	1/(nanomolarity*second)	0							natural logarithm	Neuron	34	kf_75XCDPDAGXI	39	35	1										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										Mukhopadhyay S, Ross EM PNAS 1999: 1000x SLOWER without gap; Berman, Wilkie, Gilman Cell 1996
+																										Neubig, Connolly, Remmers, 1994
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										doi:10.1371/journal.pcbi.1002953
+																										doi:10.1371/journal.pcbi.1002953
+																										doi:10.1371/journal.pcbi.1002953
+																										doi:10.1371/journal.pcbi.1002953
+																										doi:10.1371/journal.pcbi.1002953
+																										doi:10.1371/journal.pcbi.1002953
+																										doi:10.1371/journal.pcbi.1002953
+																										doi:10.1371/journal.pcbi.1002953
+																										doi:10.1371/journal.pcbi.1002953
+																										doi:10.1371/journal.pcbi.1002953
+																										doi:10.1371/journal.pcbi.1002953
+																										doi:10.1371/journal.pcbi.1002953
+																										doi:10.1371/journal.pcbi.1002953
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										
+																										doi:10.1371/journal.pcbi.1002953
+																										doi:10.1371/journal.pcbi.1002953
+																										doi:10.1371/journal.pcbi.1002953
+																										doi:10.1371/journal.pcbi.1002953
+																										doi:10.1371/journal.pcbi.1002953
+																										doi:10.1371/journal.pcbi.1002953
+																										doi:10.1371/journal.pcbi.1002953
+																										doi:10.1371/journal.pcbi.1002953
+																										doi:10.1371/journal.pcbi.1002954
+																										doi:10.1371/journal.pcbi.1002955

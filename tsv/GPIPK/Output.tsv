@@ -1,0 +1,18 @@
+!!SBtab	SBtabVersion='1.0' TableName='Output' TableTitle='Model output functions' TableType='Quantity' Document='MGluR'								
+!ID	!Name	!Comment	!ErrorName	!ErrorType	!Unit	!ProbDist	!LaTeX	!Location	!Formula
+Y0	mGluR_Glu_T	total amount of the complex mGluR with Glu	SD_Y0	abs+rel random noise (std)	nanomolarity			Neuron	Glu_mGluR + Glu_mGluR_Gqbc + Glu_mGluR_Gqabc  + Glu_mGluR_Gqabc_PLC
+Y1	mGluR_DHPG_T	total amount of the complex mGluR with DHPG	SD_Y1	abs+rel random noise (std)	nanomolarity			Neuron	DHPG_mGluR + DHPG_mGluR_Gqbc + DHPG_mGluR_Gqabc  + DHPG_mGluR_Gqabc_PLC
+Y2	mGluR_Gbc_T	total amount of the complex mGluR with Gbc	SD_Y2	abs+rel random noise (std)	nanomolarity			Neuron	Glu_mGluR_Gqabc + Glu_mGluR_Gqbc + Glu_mGluR_Gqabc_PLC + DHPG_mGluR_Gqbc + DHPG_mGluR_Gqabc  + DHPG_mGluR_Gqabc_PLC + mGluR_Gqabc + mGluR_Gqbc + mGluR_Gqabc_PLC
+Y3	M1R_ACh_T	total amount of the complex M1R with Ach	SD_Y3	abs+rel random noise (std)	nanomolarity			Neuron	ACh_M1R + ACh_M1R_Gqbc + ACh_M1R_Gqabc + ACh_M1R_Gqabc_PLC
+Y4	M1R_OxoM_T	total amount of the complex M1R with OxoM	SD_Y4	abs+rel random noise (std)	nanomolarity			Neuron	OxoM_M1R + OxoM_M1R_Gqbc + OxoM_M1R_Gqabc  + OxoM_M1R_Gqabc_PLC
+Y5	M1R_Gbc_T	total amount of the complex M1R with Gbc	SD_Y5	abs+rel random noise (std)	nanomolarity			Neuron	ACh_M1R_Gqabc + ACh_M1R_Gqbc + ACh_M1R_Gqabc_PLC + OxoM_M1R_Gqbc + OxoM_M1R_Gqabc  + OxoM_M1R_Gqabc_PLC + M1R_Gqabc + M1R_Gqbc + M1R_Gqabc_PLC
+Y6	Gabc_T	total amount of Gabc trimers	SD_Y6	abs+rel random noise (std)	nanomolarity			Neuron	Glu_mGluR_Gqabc + Glu_mGluR_Gqabc_PLC + DHPG_mGluR_Gqabc  + DHPG_mGluR_Gqabc_PLC + mGluR_Gqabc + mGluR_Gqabc_PLC + ACh_M1R_Gqabc + ACh_M1R_Gqabc_PLC + OxoM_M1R_Gqabc  + OxoM_M1R_Gqabc_PLC + M1R_Gqabc + M1R_Gqabc_PLC + Gqabc
+Y7	Ga_PLC_T	total amount of the complex Ga with PLC	SD_Y7	abs+rel random noise (std)	nanomolarity			Neuron	Glu_mGluR_Gqabc_PLC + DHPG_mGluR_Gqabc_PLC + mGluR_Gqabc_PLC + ACh_M1R_Gqabc_PLC + OxoM_M1R_Gqabc_PLC + M1R_Gqabc_PLC + GqaGTP_PLC + GqaGDP_PLC
+Y8	PIP2_PH_T	total amount of PH bound PIP2	SD_Y8	abs+rel random noise (std)	nanomolarity			Neuron	PIP2_PH
+Y9	IP3_PH_T	total amount of PH bound IP3	SD_Y9	abs+rel random noise (std)	nanomolarity			Neuron	IP3_PH
+Y10	M_current	Membrane current	SD_Y10	abs+rel random noise (std)	nanomolarity^3			Neuron	(KCNQ+PIP2_KCNQ)*0.5*0.055*(PIP2_KCNQ^2)
+Y11	PI_T	total amount of PI	SD_Y11	abs+rel random noise (std)	nanomolarity			Neuron	PI
+Y12	PIP_T	total amount of PIP	SD_Y12	abs+rel random noise (std)	nanomolarity			Neuron	PIP
+Y13	PIP2_T	total amount of PIP2	SD_Y13	abs+rel random noise (std)	nanomolarity			Neuron	PIP2 + PIP2_PH + PIP2_KCNQ
+Y14	IP3_T	total amount of IP3	SD_Y14	abs+rel random noise (std)	nanomolarity			Neuron	IP3 + IP3_PH
+Y15	PH_T	total amount of PH bound IP3	SD_Y15	abs+rel random noise (std)	nanomolarity			Neuron	PH

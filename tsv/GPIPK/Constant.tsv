@@ -1,0 +1,3 @@
+!!SBtab	Document='MGluR' SBtabVersion='1.0' TableName='Constant' TableType='Quantity' TableTitle='Some Constants used within math expressions'				
+!ID	!Name	!Value	!Unit	!LaTeX	!Location
+C0	eps	1e-05	nanomolarity	\epsilon	Neuron

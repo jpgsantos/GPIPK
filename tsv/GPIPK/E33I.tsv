@@ -1,0 +1,5 @@
+!!SBtab	SBtabVersion='1.0' TableType='QuantityMatrix' TableName='E33I' 'TableTitle='' Document='MGLuRd'		
+!Input_Time_S0	>S0	!Input_Time_S14	>S14
+0	0	0	100
+100	10000	10	0
+120	0	200	100
